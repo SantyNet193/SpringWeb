@@ -27,3 +27,4 @@ de redireccionar una pagina con parametros
 @PostMapping - @RequestMapping(value = {"index"} , method=RequestMethod.POST)
 @PutMapping - @RequestMapping(value = {"index"} , method=RequestMethod.PUT)
 @DeleteMapping - @RequestMapping(value = {"index"} , method=RequestMethod.DELETE)
+```
