@@ -1,4 +1,4 @@
-package com.bolsadeideas.springboot.di.app.models;
+package com.bolsadeideas.springboot.web.app.models;
 
 import javax.servlet.http.HttpServletRequest;
 
