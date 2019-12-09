@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.com">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<style>
+#principal {
+	display: block;
+	width: 50%;
+	margin: 100px auto;
+	background: rgba(0, 0, 0, .1);
+}
+
+#principal h1 {
+	text-align: center;
+	background: rgba(0, 0, 0, .3);
+}
+
+#principal #padre {
+	display: inline-block;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: -10px;
+	background: rgba(0, 0, 0, .1);
+}
+
+#principal #padre .box {
+	width: 48%;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-left: 1%;
+	font-size: 22px;
+	font-family: "Arial", Times, serif;
+}
+
+#principal #hijo .box {
+	width: 48%;
+	display: inline-block;
+	margin-bottom: 2px;
+	margin-left: 1%;
+	font-size: 22px;
+	font-family: "Arial", Times, serif;
+}
+
+#principal #hijo {
+	display: inline-block;
+	width: 80%;
+	margin-left: 10%;
+	background: rgba(0, 0, 0, .1);
+	width: 80%;
+	margin-left: 10%;
+}
+
+#principal #hijo h1 {
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+}
+</style>
+
+	<div id="principal">
+		<h1>Formulario</h1>
+		<div id="padre">
+			<div class="box" th:text="${padre.nombre}"></div>
+			<div class="box" th:text="${padre.apellido}"></div>
+			<div class="box">fecha nacimiento :</div>
+			<div class="box" th:text="${padre.fechaNacimiento}"></div>
+			<div class="box">edad :</div>
+			<div class="box" th:text="${padre.edad}"></div>
+		</div>
+
+		<div id="hijo" th:each="item: ${padre.listaHijos}">
+			<h1>Hijo</h1>
+			
+			<div th:text="${item.contador}"></div>
+			
+			<div class="box">nombre</div>
+			<div class="box" th:text="${item.nombre}"></div>
+			<div class="box">fechaNacimiento</div>
+			<div class="box" th:text="${item.fechaNacimiento}"></div>
+			<div class="box">edad</div>
+			<div class="box" th:text="${item.edad}"></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
