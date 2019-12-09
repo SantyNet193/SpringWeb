@@ -19,7 +19,7 @@ Spring Tools
 Proyecto en el cual se dan algunos ejemplos de como manejar los controladores y diferentes formas
 de redireccionar una pagina con parametros
 ```
-* Anotaciones Fundamentales
+** Anotaciones Fundamentales
 ```
 @Controller
 @RequestMapping
@@ -33,6 +33,7 @@ de redireccionar una pagina con parametros
 Proyecto en el cual se dan algunos ejemplos de como manejar los controladores y realizar algunas inyeciones
 con archivos de propiedades y la anotacion @Bean
 ```
+** Anotaciones Fundamentales
 ```
 @Component //Declara la clase como parte de spring boot
 @RequestScope //Realiza peticiones HTTP
