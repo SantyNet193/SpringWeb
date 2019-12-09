@@ -14,7 +14,7 @@ Spring Tools
 ```
 ## Proyectos 🚀
 
-* SpringWeb
+* SpringWeb 📋
 ```
 Proyecto en el cual se dan algunos ejemplos de como manejar los controladores y diferentes formas
 de redireccionar una pagina con parametros
@@ -28,7 +28,7 @@ de redireccionar una pagina con parametros
 @PutMapping - @RequestMapping(value = {"index"} , method=RequestMethod.PUT)
 @DeleteMapping - @RequestMapping(value = {"index"} , method=RequestMethod.DELETE)
 ```
-* SpringBootInjectionGit
+* SpringBootInjectionGit 📋
 ```
 Proyecto en el cual se dan algunos ejemplos de como manejar los controladores y realizar algunas inyeciones
 con archivos de propiedades y la anotacion @Bean
