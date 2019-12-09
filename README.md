@@ -28,3 +28,14 @@ de redireccionar una pagina con parametros
 @PutMapping - @RequestMapping(value = {"index"} , method=RequestMethod.PUT)
 @DeleteMapping - @RequestMapping(value = {"index"} , method=RequestMethod.DELETE)
 ```
+* SpringBootInjectionGit
+```
+Proyecto en el cual se dan algunos ejemplos de como manejar los controladores y realizar algunas inyeciones
+con archivos de propiedades y la anotacion @Bean
+```
+```
+@Component //Declara la clase como parte de spring boot
+@RequestScope //Realiza peticiones HTTP
+@Configuration //configurar una aplicación Spring basada en las dependencias que están presentes en el classpath
+@Bean //Un bean es un objeto que se crea una instancia
+```
